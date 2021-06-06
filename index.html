@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Flow</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            height: 100%;
+            margin: 0;
+            /* background-image: url('img/iStock_Yoga_Class.jpg'); */
+        }
+
+        /* new */
+        .bg-img {
+            background-image: url('img/imgbg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            filter: blur(2px);
+        }
+        .content{
+            position: absolute;
+            top: 0%;
+            width: 100%;
+        }
+
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 13px;
+            top: 13px;
+
+        }
+
+        /* new */
+
+        .left .logo-img {
+            width: 50px;
+            border-radius: 50%;
+            margin-left: 14px;
+        }
+
+        .left .logo-title {
+            font-size: 16px;
+            color: #3d3b3b;
+            font-weight: 600;
+        }
+
+        /* new */
+
+        .left div {
+            line-height: 10px;
+            font-size: 26px;
+            text-align: center;
+            color: brown;
+        }
+
+        .mid {
+            display: block;
+            width: 60%;
+            margin: 3px auto;
+        }
+
+        /* new */
+        .mid {
+            background-color: rgba(51, 32, 32, 0.5);
+            float: right;
+            margin-top: 15px;
+            margin-right: 25px;
+            border-radius: 15px;
+            width: auto;
+            height: auto;
+        }
+
+        /* new */
+
+        .right {
+            position: absolute;
+            right: 0px;
+            width: 20%;
+            margin: 3px;
+            top: 10px;
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: rgb(30, 113, 119);
+            text-decoration: none;
+            margin-right: 30px;
+        }
+
+        /* new */
+        .navbar li a {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgb(198, 207, 207);
+        }
+
+        .navbar li a:hover {
+            color: sandybrown;
+
+        }
+
+        .btn {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 5px;
+            background-color: rgb(50, 70, 50);
+            color: thistle;
+            padding: 15PX 10px;
+            border: 2px top;
+            border-radius: 10px;
+            font-style: 20px;
+            cursor: pointer;
+
+
+        }
+
+        .btn :hover {
+            background-color: transparent;
+            border: solid 2px black;
+        }
+
+        .first {
+            /* border: 30px top; */
+            /* margin: 20px; */
+            background-color: rgba(58, 57, 57, 0.747);
+            margin-top: 120px;
+            margin-left: 150px;
+            float: left;
+            padding: 30px;
+            /* width: 30%; */
+            width: auto;
+            border-radius: 10px;
+        }
+
+        .form {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            display: block;
+            /* width: 500px; */
+            width: auto;
+            padding: 2px;
+            border: 19px;
+            margin: 19px;
+            font-size: 40px;
+            border-radius: 40px;
+        }
+        input[type="text"]{
+            width: 500px;
+            height: 35px;
+            border-radius: 10px;
+            font-size: 15px;
+            padding-left: 15px;
+        }
+        .first h1 {
+            text-align: center;
+            color: rgb(208, 232, 233);
+
+        }
+
+        .first button {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            width: 150px;
+            height: 50px;
+            margin: auto;
+            margin-top: 40px;
+            padding: 0px;
+            border-radius: 15px;
+            background-color: rgba(80, 31, 19, 0.5);
+            color: whitesmoke;
+        }
+        .first button:hover{
+            background-color: transparent;
+            border: solid 3px rgba(80, 31, 19, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-img"></div>
+    <div class="content">
+        <header class="header">
+            <div class="left">
+    
+                <!-- <img src="img/yhuf.jpg" alt=""> -->
+    
+                <img class="logo-img" src="img/logo.jpg" alt="">
+    
+                <!-- <div>Yoga Flow</div> -->
+                <h1 class="logo-title">Yoga Flow</h1>
+    
+            </div>
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fetures</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- <div class="right">
+                <button class="btn">Email</button>
+                <button class="btn">Instagram</button>
+            </div> -->
+        </header>
+        <div class="first">
+            <h1>Welcome ! To Yoga Classes</h1>
+            <form action="php.gsy">
+                <div class="form">
+                    <input type="text" name="myname" placeholder="Name">
+                </div>
+                <div class="form">
+                    <input type="text" name="myemail" placeholder="Email">
+                </div>
+                <div class="form">
+                    <input type="text" name="myage" placeholder="Age">
+                </div>
+                <div class="form">
+                    <input type="text" name="mygender" placeholder="Gender">
+                </div>
+                <div class="form">
+                    <input type="text" name="mynumber" placeholder="Contact Number">
+                </div>
+                <button class="btn">Join </button>
+            </form>
+        </div>
+    </div>
+   
+
+</body>
+
+</html>
